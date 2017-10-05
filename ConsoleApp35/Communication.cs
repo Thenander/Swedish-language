@@ -12,11 +12,11 @@ namespace Lab3
         
         public static void FirstChoice()
         {
-            Console.WriteLine("Välj lista ett nummer i nedanstående lista");
+            Console.WriteLine("Välj en ordklass i listan:");
 
-            foreach (string item in Lists.mainList)
+            foreach (Menu item in Lists.mainList)
             {
-                Console.WriteLine("{0} ",item);
+                Console.WriteLine(item.Number+". "+item.Words);
             }
         }
     }

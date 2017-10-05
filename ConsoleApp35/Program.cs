@@ -14,6 +14,7 @@ namespace Lab3
 
         static void Main(string[] args)
         {
+
             Communication.FirstChoice();
 
             while (true)
@@ -32,50 +33,35 @@ namespace Lab3
                             if (mainListSwitcher == 1)
                             {
                                 Console.Clear();
-                                foreach (string item in Lists.adjectiveList)
-                                {
-                                    Console.WriteLine(item);
-                                }
+                                ChoiceOfList.Adjective();
                             }
                             break;
                         case 2:
                             if (mainListSwitcher == 2)
                             {
                                 Console.Clear();
-                                foreach (string item in Lists.adverbList)
-                                {
-                                    Console.WriteLine(item);
-                                }
+                                ChoiceOfList.Adverb();
                             }
                             break;
                         case 3:
                             if (mainListSwitcher == 3)
                             {
                                 Console.Clear();
-                                foreach (string item in Lists.conjunctionList)
-                                {
-                                    Console.WriteLine(item);
-                                }
+                                ChoiceOfList.Conjunction();
                             }
                             break;
                         case 4:
                             if (mainListSwitcher == 4)
                             {
                                 Console.Clear();
-                                foreach (string item in Lists.personalPronounList)
-                                {
-                                    Console.WriteLine(item);
-                                }
+                                ChoiceOfList.PersonalPronoun();
                             }
                             break;
                         case 5:
                             if (mainListSwitcher == 5)
                             {
                                 Console.Clear();
-                                foreach (string item in Lists.verbList)
-                                {
-                                    Console.WriteLine(item);
-                                }
+                                ChoiceOfList.Verb();
                             }
                             break;
                         default:
@@ -95,17 +81,6 @@ namespace Lab3
                     Communication.FirstChoice();
                 }
             }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
